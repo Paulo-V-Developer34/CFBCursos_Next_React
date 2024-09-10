@@ -20,6 +20,7 @@ export default function logoescola(){
           <Link href={'/produtos/produtos'}>produtos</Link>
           <Link href={'/usestate/usestate2'}>Contador</Link>
           <Link href={'/inputs/inputs'}>Input</Link>
+          <Link href={'/useeffect/useeffect'}>useEffect</Link>
           <Link href={'/'}>Home</Link>
         </nav>
       </div>

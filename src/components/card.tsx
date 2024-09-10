@@ -15,7 +15,7 @@ export default function Card(props:cardProps){
                 <div>
                     <div>Desconto: {props.desconto}%</div>
                     <div>Preço com desconto: R${props.funcao(props.valor,props.desconto)}</div>
-                    <div>Edição: {props.children[0]}</div> {/*estou obrigando-o a pegar apenas o primeiro elemento visto que dos filhos, pois ele pode conter vários filhos*/}
+                    <div>Edição: {props.children}</div> {/*estou obrigando-o a pegar apenas o primeiro elemento visto que dos filhos, pois ele pode conter vários filhos*/}
                 </div>
             }{/*estou inserindo JS */}
         </div>

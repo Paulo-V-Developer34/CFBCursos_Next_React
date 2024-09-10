@@ -1,6 +1,7 @@
 //importações
 import { useState } from "react";
 import DisplayState from "@/components/displayState2";
+import logoescola from "@/components/topo";
 
 //componente
 export default function usestateteste(){
@@ -8,6 +9,7 @@ export default function usestateteste(){
 
     return (
         <div>
+            {logoescola()}
             <h2>Testando useState</h2>
             <DisplayState valor={cont} fstate={alterarcont}></DisplayState> {/*estou enviando o próprio useState */}
         </div>

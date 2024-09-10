@@ -1,4 +1,5 @@
 import { useRouter } from "next/router"
+import logoescola from "@/components/topo"
 
 
 export default function test(){
@@ -6,6 +7,7 @@ export default function test(){
     const parametros = router.query
     return (
         <div>
+            {logoescola()}
             <h1>TESTE</h1>
             <br/>
             <h2>{parametros.nome}</h2>
