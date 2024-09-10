@@ -36,10 +36,15 @@ export default function Home() {
   //   )   
   // }
 
+  //objetos e arrays
   const supercss = { //posso atribuir css à objetos (bibliotecas (conjunto chave-valor))
     color: '#fff',
     backgroundColor: '#f0f'
   }
+
+
+
+  
 
   //POSSO COLOCAR VÁRIOS CÓDIGOS AQUI, MAS HAVERÁ APENAS 1 RETURN
 
@@ -52,14 +57,6 @@ export default function Home() {
         <div>PHP</div> 
         <div>REACT</div>
         <br/>
-        <br/>
-        <div className="flex justify-center gap-3">
-          <Card produto={'Pano Gamer'} valor={5} desconto={0}/>
-          <Card produto={'Fone Gamer'} valor={50} desconto={0}/>
-          <Card produto={'Teclado Gamer'} valor={80} desconto={0}/>
-          <Card produto={'Mouse Gamer'} valor={60} desconto={0}/>
-        </div>
-        
     </main>
   );
 }
