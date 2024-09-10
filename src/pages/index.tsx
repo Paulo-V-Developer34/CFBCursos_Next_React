@@ -12,6 +12,11 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+//importações
+import logoescola from "@/components/topo";
+import Aluno from "@/components/aluno";
+import Card from "@/components/card";
+
 
 // function mudarnome(novoNome:string):void{  //essa function não consegue acessar a variável "nome" pois ela está em um escopo à frente, lembre-se disso, isso pode te ajudar
 //   nome = novoNome    
@@ -19,41 +24,42 @@ const geistMono = localFont({
 
 export default function Home() {
 
-  //variáveis
-  let nome = "Paulo"
-  let curso = "Informática para internet"
+  //removi essas variáveis daqui e as coloquei em components
 
-  function Apresentacao(){
-    return (
-      <div>
-        <h1>{nome}</h1>
-        <h2>{curso}</h2>
-        <br/>
-      </div>
-    )
+  // function logoescola(){
+  //   return (  
+  //     <div className="flex justify-between items-center bg-zinc-300 h-[100px]"> {/*aqui podemos chamar o tailwind ou o css normal */}
+  //       <div>Marechal</div>
+  //       <div>do</div>
+  //       <div>Ar</div>
+  //     </div>
+  //   )   
+  // }
+
+  const supercss = { //posso atribuir css à objetos (bibliotecas (conjunto chave-valor))
+    color: '#fff',
+    backgroundColor: '#f0f'
   }
-
-  function logoescola(){
-    return (
-      <div className="flex space-between"> {/*aqui podemos chamar o tailwind ou o css normal */}
-        <div>Marechal</div>
-        <div>do</div>
-        <div>Ar</div>
-      </div>
-    )
-  }
-
 
   //POSSO COLOCAR VÁRIOS CÓDIGOS AQUI, MAS HAVERÁ APENAS 1 RETURN
 
   return ( //O RETURN DEVE RETORNAR APENAS 1 TAG  //eu utilizo {variavel} para poder inserir variáveis dentro do meu html
-    <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Apresentacao/> {/*isso é um componente, componenetes só podem ser chamados se possuirem a primeira letra sendo maiúscula*/}
+    <main>
         {logoescola()} {/*Posso chamar um componente dessa forma também */}
-        <div>JS</div>
-        <div>NEXT</div>
-        <div>{nome}</div> 
+        <div style={{color:'#f00',backgroundColor:'blue'}}>JS</div> {/*posso alterar o CSS inline utilizando {{}} ao invés de '' */}
+        <Aluno/> {/*isso é um componente, componenetes só podem ser chamados se possuirem a primeira letra sendo maiúscula*/}
+        <div style={supercss}>NEXT</div> {/*aqui eu não precisei usar {} novamente por que estou usando um objeto que no caso já possui outro {} */}
+        <div>PHP</div> 
         <div>REACT</div>
+        <br/>
+        <br/>
+        <div className="flex justify-center gap-3">
+          <Card produto={'Pano Gamer'} valor={5} desconto={0}/>
+          <Card produto={'Fone Gamer'} valor={50} desconto={0}/>
+          <Card produto={'Teclado Gamer'} valor={80} desconto={0}/>
+          <Card produto={'Mouse Gamer'} valor={60} desconto={0}/>
+        </div>
+        
     </main>
   );
 }

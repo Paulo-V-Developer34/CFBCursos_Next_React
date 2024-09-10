@@ -1,6 +1,10 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities; 
+
+/* //importações OBS eu consigo fazer importações e criar variáveis sem SASS*/
+@import './topo.css'; 
+
 
 /* :root {
 

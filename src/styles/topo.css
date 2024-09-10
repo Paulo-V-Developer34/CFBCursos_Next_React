@@ -1,0 +1,9 @@
+/* variáveis CSS globais */
+:root{
+    --tamanho-g: 50px; 
+}
+
+
+.textogrande{
+    font-size: var(--tamanho-g); /*utilize var() para utilizar suas variáveis globais*/
+}
