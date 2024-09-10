@@ -1,4 +1,4 @@
-import { useRouter } from "next/router" //eu devo utilizar o useRouter para poder receber dados que foram enviados via "Link" (via get (URL))
+import { useRouter } from "next/router"
 
 
 export default function test(){

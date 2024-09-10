@@ -50,7 +50,8 @@ export default function produtos(){
                 {
                     listaprodutos.map((el:any,i:number)=>{
                     return (
-                        <Card produto={el.produto} valor={el.valor} desconto={el.desconto} funcao={el.funcao}>Edição de Natal</Card> /*estou enviando o props children dentro da tag card*/
+                        //eu inseri o "key" para indentificar cada componente
+                        <Card key={i} produto={el.produto} valor={el.valor} desconto={el.desconto} funcao={el.funcao}>Edição de Natal</Card> /*estou enviando o props children dentro da tag card*/
                     )
                     })
                 }

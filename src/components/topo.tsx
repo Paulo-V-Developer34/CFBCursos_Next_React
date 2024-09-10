@@ -11,14 +11,15 @@ export default function logoescola(){
         <nav className="flex gap-5 justify-center">
           <Link href={
             {
-              pathname:'/test/test',
+              pathname:'/test/test2',
               query:{nome:"Paulo",curso:"Infonet"}
             }
           }>
             Teste
           </Link>
           <Link href={'/produtos/produtos'}>produtos</Link>
-          <Link href={'/usestate/usestate'}>Contador</Link>
+          <Link href={'/usestate/usestate2'}>Contador</Link>
+          <Link href={'/inputs/inputs'}>Input</Link>
           <Link href={'/'}>Home</Link>
         </nav>
       </div>

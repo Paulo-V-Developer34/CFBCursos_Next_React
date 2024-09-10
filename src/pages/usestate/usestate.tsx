@@ -6,7 +6,7 @@ import DisplayState from "@/components/displayState";
 export default function usestateteste(){
     const [cont, alterarcont]=useState<number>(0)
 
-    function adicionar(){ //PERCEBA QUE O useState ESTÁ SENDO GERADO AQUI MAS PODE SER ACESSADO PELOS COMPONENTES FILHOS
+    function adicionar(){ //PERCEBA EU CONSEGUI PASSAR AS FUNÇÕES PARA OS COMPONENTES FILHOS
         let c = cont
         c++
         alterarcont(c)
