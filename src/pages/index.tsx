@@ -1,21 +1,21 @@
-import Image from "next/image";
-import localFont from "next/font/local";
+// import Image from "next/image";
+// import localFont from "next/font/local";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 //importações
 import logoescola from "@/components/topo";
 import Aluno from "@/components/aluno";
-import Card from "@/components/card";
+
 
 
 // function mudarnome(novoNome:string):void{  //essa function não consegue acessar a variável "nome" pois ela está em um escopo à frente, lembre-se disso, isso pode te ajudar

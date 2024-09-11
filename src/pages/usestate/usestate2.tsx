@@ -4,7 +4,7 @@ import DisplayState from "@/components/displayState2";
 import logoescola from "@/components/topo";
 
 //componente
-export default function usestateteste(){
+export default function Usestateteste(){
     const [cont, alterarcont]=useState<number>(0) /*aqui eu estou usando o use state para poder atualizar os valores automaticamente */
 
     return (

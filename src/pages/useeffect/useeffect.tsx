@@ -1,7 +1,7 @@
 import logoescola from "@/components/topo"
 import { useState, useEffect } from "react"
 
-export default function usedefaulttest(){
+export default function Usedefaulttest(){
     const [num,setnum] = useState<number>(0)
 
     // useEffect(()=>{ //useEffect é executado sempre que o useState for chamado

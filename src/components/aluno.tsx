@@ -1,6 +1,6 @@
 //variáveis
-let nome = "Paulo"
-let curso = "Informática para internet"
+const nome = "Paulo"
+const curso = "Informática para internet"
 
 export default function Aluno(){
   return (

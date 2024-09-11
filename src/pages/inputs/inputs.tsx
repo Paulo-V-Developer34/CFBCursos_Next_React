@@ -1,28 +1,28 @@
 import { useState } from "react";
 import logoescola from "@/components/topo";
 
-let arrayc = ['PHP','Java','JavaScript','TypeScript','Angular','Next']
+const arrayc = ['PHP','Java','JavaScript','TypeScript','Angular','Next']
 
-let jsonc = [
-    {"curso":"PHP"},
-    {"curso":"Java"},
-    {"curso":"JavaScript"},
-    {"curso":"TypeScript"}
-]
+// const jsonc = [
+//     {"curso":"PHP"},
+//     {"curso":"Java"},
+//     {"curso":"JavaScript"},
+//     {"curso":"TypeScript"}
+// ]
 
-export default function input(){
-    let [nome, setnome] = useState<string>('')  //devemos utilizar useState para poder utilizar input dentro do react
-    let [curso, setcurso] = useState<string>('')
+export default function Input(){
+    const [nome, setnome] = useState<string>('')  //devemos utilizar useState para poder utilizar input dentro do react
+    const [curso, setcurso] = useState<string>('')
 
     function fgeraroptions(){
-        return arrayc.map((el,i)=>{
-            return <option value={el}>{el}</option>
+        return arrayc.map((el,i:number)=>{
+            return <option value={el} key={`opt${i}`}>{el}</option>
         })
     }
 
-    const vgeraroptions=jsonc.map((el,i)=>{ //essa faz a mesma coisa que a function porém sendo uma variável e iterando um JSON
-        return <option value={el.curso}>{el.curso}</option>
-    })
+    // const vgeraroptions=jsonc.map((el,i)=>{ //essa faz a mesma coisa que a function porém sendo uma variável e iterando um JSON
+    //     return <option value={el.curso} key={Math.random()*99999}>{el.curso}</option> //aqui é outra forma de gerar um ID
+    // })
 
     return (
         <main>

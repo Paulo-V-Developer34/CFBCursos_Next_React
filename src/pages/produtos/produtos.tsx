@@ -7,6 +7,13 @@ function calculardesc(valort:number,desc:number):number{
     return valort - (valort * (desc/100))
 }
 
+interface Produto {
+  produto: string;
+  valor: number;
+  desconto: number;
+  funcao:(valort: number, desc: number)=>number;
+}
+
 const listaprodutos = [
     {
       produto:'Pano Gamer', 
@@ -48,7 +55,7 @@ export default function produtos(){
                 
                 {/* percorrendo um array para transforma-los em elementos do DOM */}
                 {
-                    listaprodutos.map((el:any,i:number)=>{
+                    listaprodutos.map((el:Produto,i:number)=>{
                     return (
                         //eu inseri o "key" para indentificar cada componente
                         <Card key={i} produto={el.produto} valor={el.valor} desconto={el.desconto} funcao={el.funcao}>Edição de Natal</Card> /*estou enviando o props children dentro da tag card*/

@@ -1,7 +1,7 @@
 interface DisplayProps{
     valor:number
-    fadicionar:any
-    fsubtrair:any
+    fadicionar:()=>void
+    fsubtrair:()=>void
 }
 
 export default function DisplayState(props:DisplayProps){

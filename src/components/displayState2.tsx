@@ -1,6 +1,6 @@
 interface DisplayProps{
     valor:number
-    fstate:any
+    fstate:(op:number)=>void
 }
 
 export default function DisplayState(props:DisplayProps){

@@ -3,7 +3,7 @@ import { useState } from "react";
 import DisplayState from "@/components/displayState";
 
 //componente
-export default function usestateteste(){
+export default function Usestateteste(){
     const [cont, alterarcont]=useState<number>(0)
 
     function adicionar(){ //PERCEBA EU CONSEGUI PASSAR AS FUNÇÕES PARA OS COMPONENTES FILHOS

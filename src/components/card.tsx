@@ -2,8 +2,8 @@ interface cardProps { //agora cardProps é um tipo e isso é muito útil
     produto: string
     valor:number
     desconto:number
-    funcao:any 
-    children?:any//é opcional
+    funcao:(valort:number,desc:number)=>number
+    children?: React.ReactNode//é opcional
 }
 
 export default function Card(props:cardProps){
